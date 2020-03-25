@@ -1,0 +1,40 @@
+font：锁定框信息字体
+img：预测图片放置文件夹
+logs:训练完成后的模型存放文件
+model_data：
+    voc_classes.txt：需要检测类型存放文件
+    yolo_anchors.txt：
+    yolo_weights.h5：初始模型文件
+nets：
+    loss.py:定义预测损失函数
+    yolo3.py：整个网络搭建文件
+    darknet53.py
+utils/utils.py：预测处理
+VOCdevkit：
+    VOC2007：
+        voc2yolo3.py：数据处理函数
+        Annotations：标注文件
+        ImageSets：数据信息
+        JPEGImages：数据文件
+predict.py:数据整合
+    {
+     2007_test.txt
+     2007_train.txt
+     2007_val.txt
+     }
+train.py:模型训练函数
+voc_annotation.py：
+yolo.py：预测文件
+###########################################################################
+#                          训练模型                                       #
+###########################################################################
+训练自己的数据，代码执行顺序：
+    1.voc2yolo3.py       遍历标注文件，生成数据id
+    2.voc_anndtation.py  整理数据，方便训练时获取数据
+    3.train.py           训练模型，生成权重参数模型
+    4.yolo.py            模型预测数据处理函数（放入训练好的模型便可预测）
+    5.predict.py         预测函数，可选择不同的预测方式
+
+@环境：
+    tensorflow==1.14.0(影响不太大）
+    keras==2.1.5(其他版本可能会报错）
