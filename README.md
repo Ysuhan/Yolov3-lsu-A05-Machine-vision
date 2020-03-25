@@ -1,11 +1,9 @@
-# yolo3-keras
-这是一个yolo3-keras的源码，可以用于训练自己的模型。
+# yolov3-keras
+这是一个yolov3-keras的源码，可以用于训练自己的模型。
 
 # 文件下载
-训练所需的yolo_weights.h5可以在Release里面下载。  
-https://github.com/bubbliiiing/yolo3-keras/releases  
-也可以去百度网盘下载  
-链接: https://pan.baidu.com/s/1izPebZ6PVU25q1we1UgSGQ 提取码: tbj3  
+训练所需的原始yolo.h5，和训练好的yolov3.h5下载。  
+加群： https://jq.qq.com/?_wv=1027&k=5IMtM6n
 # 训练步骤
 1、本文使用VOC格式进行训练。  
 2、训练前将标签文件放在VOCdevkit文件夹下的VOC2007文件夹下的Annotation中。  
@@ -20,4 +18,4 @@ classes = ["aeroplane", "bicycle", "bird", "boat", "bottle", "bus", "car", "cat"
 8、运行train.py即可开始训练。  
 
 # Reference
-https://github.com/qqwweee/keras-yolo3/
+https://github.com/Ysuhan/Yolov3-lsu-A05-Machine-vision/
